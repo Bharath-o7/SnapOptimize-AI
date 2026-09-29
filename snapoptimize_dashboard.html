@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>SnapOptimize AI Dashboard</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    margin: 0;
+    padding: 40px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    color: #555;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.value {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.section {
+    background: white;
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.bar {
+    height: 35px;
+    margin: 12px 0;
+    background: #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.baseline {
+    height: 100%;
+    width: 100%;
+    background: #777;
+}
+
+.optimized {
+    height: 100%;
+    width: 32.9%;
+    background: #333;
+}
+
+.result {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.footer {
+    text-align: center;
+    color: #777;
+    margin-top: 30px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+<h1>⚡ SnapOptimize AI</h1>
+
+<p class="subtitle">
+AI Workload Performance Optimization Dashboard
+</p>
+
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Baseline</h3>
+
+<div class="value">
+7.396 ms
+</div>
+
+<p>
+135.21 inferences/sec
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Optimized</h3>
+
+<div class="value">
+2.431 ms
+</div>
+
+<p>
+411.37 inferences/sec
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Latency Reduction</h3>
+
+<div class="value">
+67.13%
+</div>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>Latency Comparison</h2>
+
+<p>
+Baseline: 7.396 ms
+</p>
+
+<div class="bar">
+<div class="baseline"></div>
+</div>
+
+
+<p>
+Optimized: 2.431 ms
+</p>
+
+<div class="bar">
+<div class="optimized"></div>
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>Performance Improvement</h2>
+
+<div class="result">
+
+↓ 67.13% Latency
+
+<br><br>
+
+↑ 204.24% Throughput
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>AI Workload</h2>
+
+<p><b>Model:</b> SqueezeNet</p>
+
+<p><b>Task:</b> Image Classification</p>
+
+<p><b>Input:</b> 224 × 224</p>
+
+<p><b>Execution:</b> ONNX Runtime CPU</p>
+
+</div>
+
+
+<div class="section">
+
+<h2>Optimization Recommendation</h2>
+
+<p>
+The measured optimized configuration reduced inference latency
+on the development system.
+</p>
+
+<p>
+For Snapdragon deployment, the same workload can be evaluated
+using supported Qualcomm hardware and execution providers.
+</p>
+
+</div>
+
+
+<div class="footer">
+
+SnapOptimize AI — Development Prototype
+
+</div>
+
+</div>
+
+</body>
+
+</html>
